@@ -104,3 +104,17 @@ INSERT INTO todo (
   TO_TIMESTAMP('2017-08-10 08:45:40', 'YYYY-MM-DD HH24:MI:SS'),
   NULL
 );
+
+SELECT *
+FROM todo WHERE completed_at IS NULL;
+
+SELECT *
+FROM todo WHERE priority > 1;
+
+UPDATE todo
+SET completed_at = TO_TIMESTAMP('2017-08-09 03:35:27', 'YYYY-MM-DD HH24:MI:SS') WHERE id = 5;
+
+UPDATE todo
+SET priority = 4 WHERE id < 3;
+
+DELETE FROM todo WHERE title = 'stay humble';
