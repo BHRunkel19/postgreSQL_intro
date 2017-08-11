@@ -17,10 +17,14 @@ DELETE FROM todo WHERE title = 'stay humble';
 
 
 //PART 2 COMMANDS
-select * from todo where completed_at is NULL and priority = 3;
+select * from todo
+where completed_at is NULL and priority = 3;
 
-select count(completed_at) from todo where completed_at is NULL order by (priority) desc;
+select count(completed_at) from todo
+where completed_at is NULL order by (priority) desc;
 
-select * from todos where created_at between ('2017-07-10') and now();
+select * from todos
+where created_at between ('2017-07-10') and now();
 
-Select * from todos order by priority limit 1;
+select * from todos 
+order by priority limit 1;
