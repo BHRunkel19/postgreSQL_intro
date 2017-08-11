@@ -23,8 +23,8 @@ where completed_at is NULL and priority = 3;
 select count(completed_at) from todo
 where completed_at is NULL order by (priority) desc;
 
-select * from todos
+select * from todo
 where created_at between ('2017-07-10') and now();
 
-select * from todos 
+select * from todo
 order by priority limit 1;
